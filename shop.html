@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Pretty Stories</title>
+</head>
+<body>
+
+  <header>
+    <h1 class="logo">Pretty Stories by Madhu</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about">
+      <h1>Shop</h1>
+      <h2>Shop My Handcrafted Treasures</h2>
+    </section>
+
+    <section class="shop-items">
+      <!-- Product cards start -->
+      <div class="product-card">
+        <img src="assets/images/shop/PS001.jpg" alt="Product 1">
+        <h3>Mandala Frame</h3>
+        <p>Hand drawn mandala frame, uniquely designed to add peace, beauty, and positive energy to your space.</p>
+        <span>₹800</span><br>
+        <button onclick="copyAndDM('PS001')">DM to order</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/images/shop/PS002.jpg" alt="Product 2">
+        <h3>Mandala Frame</h3>
+        <p>Hand drawn mandala frame, uniquely designed to add peace, beauty, and positive energy to your space.</p>
+        <span>₹800</span><br>
+        <button onclick="copyAndDM('PS002')">DM to order</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/images/shop/PS003.jpg" alt="Product 3">
+        <h3>Mandala Frame</h3>
+        <p>Hand drawn mandala frame, uniquely designed to add peace, beauty, and positive energy to your space.</p>
+        <span>₹800</span><br>
+        <button onclick="copyAndDM('PS003')">DM to order</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/images/shop/PS004.jpg" alt="Product 4">
+        <h3>Mandala Frame</h3>
+        <p>Hand drawn mandala frame, uniquely designed to add peace, beauty, and positive energy to your space.</p>
+        <span>₹600</span><br>
+        <button onclick="copyAndDM('PS004')">DM to order</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/images/shop/PS005.jpg" alt="Product 5">
+        <h3>Mandala Bookmark</h3>
+        <p>Hand drawn bookmark. A lovely companion for your reading moments.</p>
+        <span>₹120</span><br>
+        <button onclick="copyAndDM('PS005')">DM to order</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/images/shop/Ps006.jpg" alt="Product 6">
+        <h3>Mandala Bookmark</h3>
+        <p>Hand drawn bookmark. A lovely companion for your reading moments.</p>
+        <span>₹120</span><br>
+        <button onclick="copyAndDM('PS006')">DM to order</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/images/shop/Ps007.jpg" alt="Product 7">
+        <h3>Hand painted Bookmark</h3>
+        <p>A hand-drawn, watercolor bookmark. A lovely companion for your reading moments, adding a touch of beauty and serenity to every page.</p>
+        <span>₹150</span><br>
+        <button onclick="copyAndDM('PS007')">DM to order</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/images/shop/Ps008.jpg" alt="Product 8">
+        <h3>Hand painted Bookmark</h3>
+        <p>A hand-drawn, watercolor bookmark. A lovely companion for your reading moments, adding a touch of beauty and serenity to every page.</p>
+        <span>₹150</span><br>
+        <button onclick="copyAndDM('PS008')">DM to order</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/images/shop/PS009.jpg" alt="Product 9">
+        <h3>Mandala wall hanging (Set of 3)</h3>
+        <p>A handcrafted mandala wall hanging, designed to infuse your space with intricate beauty and peace.</p>
+        <span>₹1200</span><br>
+        <button onclick="copyAndDM('PS009')">DM to order</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/images/shop/PS010.jpg" alt="Product 10">
+        <h3>Digital Mandala Art</h3>
+        <p>Digital mandala art, available for print or as framed pieces, bringing intricate beauty to your home.</p>
+        <span>₹200</span><br>
+        <button onclick="copyAndDM('PS010')">DM to order</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/images/shop/PS011.jpg" alt="Product 11">
+        <h3>Digital Mandala Art</h3>
+        <p>Digital mandala art, available for print or as framed pieces, bringing intricate beauty to your home.</p>
+        <span>₹200</span><br>
+        <button onclick="copyAndDM('PS011')">DM to order</button>
+      </div>
+
+      <div class="product-card">
+        <img src="assets/images/shop/PS012.jpg" alt="Product 12">
+        <h3>Digital Mandala Art</h3>
+        <p>Digital mandala art, available for print or as framed pieces, bringing intricate beauty to your home.</p>
+        <span>₹200</span><br>
+        <button onclick="copyAndDM('PS012')">DM to order</button>
+      </div>
+      <!-- Product cards end -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Pretty Stories by Madhu. All rights reserved.</p>
+    <p>Designed with love and creativity.</p>   
+  </footer>
+
+  <script>
+    function copyAndDM(code) {
+      const message = `Hi, I'm interested in ordering this product (Code: ${code}).`;
+      navigator.clipboard.writeText(message);
+      alert("Message copied! You can now paste it in Instagram DM.");
+      window.open("https://www.instagram.com/pretty.stories_/", "_blank");
+    }
+  </script>
+
+</body>
+</html>
